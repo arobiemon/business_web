@@ -33,11 +33,11 @@ defineOptions({
 
 <style scoped>
 .bg_gradian {
-  background: rgb(164, 63, 251);
+  background: rgb(63, 251, 227);
   background: radial-gradient(
     circle,
-    rgba(164, 63, 251, 1) 0%,
-    rgba(255, 255, 255, 0.8408613445378151) 34%
+    rgba(63, 251, 227, 1) 0%,
+    rgba(32, 230, 125, 1) 100%
   );
 }
 </style>
