@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header style="background: #ffffff !important; color:black">
+    <q-header style="background: #ffffff !important; color: black">
       <q-toolbar>
         <q-btn
           flat
@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Emon Traders</q-toolbar-title>
+        <q-toolbar-title class="text-bold"> Emon Traders</q-toolbar-title>
 
         <div>welcome Brother</div>
       </q-toolbar>
