@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout>
     <q-header style="background: #ffffff !important; color: black">
       <q-toolbar>
         <q-btn
@@ -17,7 +17,7 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer elevated>
+    <q-footer>
       <q-toolbar>
         <q-toolbar-title>Footer</q-toolbar-title>
       </q-toolbar>
