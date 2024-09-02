@@ -16,6 +16,7 @@
         <div>welcome Brother</div>
       </q-toolbar>
     </q-header>
+
     <q-footer elevated>
       <q-toolbar>
         <q-toolbar-title>Footer</q-toolbar-title>
