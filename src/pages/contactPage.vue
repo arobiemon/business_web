@@ -1,4 +1,5 @@
 <template>
+
   <q-page padding>
     <div class="q-pa-md" style="max-width: 400px">
 
@@ -38,6 +39,7 @@
 
 </div>
   </q-page>
+
 </template>
 
 
@@ -46,6 +48,7 @@ import { useQuasar } from 'quasar'
 import { ref } from 'vue'
 
 export default {
+
   setup () {
     const $q = useQuasar()
 
@@ -85,4 +88,5 @@ export default {
     }
   }
 }
+
 </script>
