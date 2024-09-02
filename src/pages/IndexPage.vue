@@ -45,6 +45,22 @@
         pariatur recusandae nemo nostrum veritatis quo unde provident. Aut iure
         doloribus culpa quisquam?
       </div>
+      <div class="q-pa-xl row centered-cols">
+        <div class="col">
+          <div class="text-bold text-h3">300%</div>
+          <div>increase in new pipeline generated</div>
+        </div>
+        <q-separator vertical />
+        <div class="col">
+          <div class="text-bold text-h3">70%</div>
+          <div>increase in from conversions</div>
+        </div>
+        <q-separator vertical />
+        <div class="col">
+          <div class="text-bold text-h3">60%</div>
+          <div>Decrease in cost per lead</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -86,6 +102,15 @@ defineOptions({
 .centered-lorem {
   text-align: center;
   margin-top: 10px;
-  padding: 0 20px; /* Adjust padding for better readability */
+  padding: 0 20px;
+}
+.centered-cols {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(44, 148, 204, 0.856);
+}
+.col {
+  flex: 0 1 300px;
 }
 </style>
