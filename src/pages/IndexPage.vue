@@ -73,6 +73,27 @@
           }"
         />
       </div>
+      <div class="q-pa-xl row">
+        <div class="col-6">
+          <q-img
+            src="~assets/Mr. Mike.png"
+            :ratio="8/6"
+            spinner-color="primary"
+            spinner-size="82px"
+          />
+        </div>
+        <div class="col-6 mr_mike">
+          <div class="text-h2 text-bold">
+            Know your buyer, <br />like you know your business.
+          </div>
+          <div class="q-mt-md">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+            commodi excepturi enim, facere culpa sint quos eligendi corporis
+            provident nisi accusantium deleniti magni aliquam officiis velit
+            saepe corrupti voluptatum ut.
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -122,5 +143,8 @@ defineOptions({
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.mr_mike{
+  margin-top: 4rem;
 }
 </style>
