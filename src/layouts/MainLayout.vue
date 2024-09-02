@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title class="text-bold"> Emon Traders</q-toolbar-title>
+        <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
 
         <div>welcome Brother</div>
       </q-toolbar>
