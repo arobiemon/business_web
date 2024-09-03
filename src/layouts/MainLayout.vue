@@ -17,10 +17,50 @@
       </q-toolbar>
     </q-header>
 
-    <q-footer>
-      <q-toolbar>
-        <q-toolbar-title>Footer</q-toolbar-title>
-      </q-toolbar>
+    <q-footer style="background: blue-6">
+      <div class="row">
+        <div class="col-2">
+          INFO
+          <div>Formats</div>
+          <div>Compression</div>
+          <div>Pricing</div>
+          <div>FAQ</div>
+          <div>Status</div>
+        </div>
+        <div class="col-2">
+          RESOURCES
+          <div>Developer API</div>
+          <div>Tools</div>
+          <div>Blog</div>
+        </div>
+        <div class="col-2">
+          COMPANY
+          <div>About Us</div>
+          <div>Sustainability</div>
+          <div>Terms of Service</div>
+          <div>Privacy</div>
+        </div>
+        <div class="col-6">
+          <div class="q-pa-md" style="max-width: 300px">
+            <q-form>
+              <q-input
+                filled
+                type="email"
+                v-model="name"
+                label="Your email *"
+                hint="email@gmail.com"
+                lazy-rules
+                :rules="[
+                  (val) => (val && val.length > 0) || 'Please enter your email',
+                ]"
+              />
+              <div>
+                <q-btn label="Suscribe" type="submit" color="white" />
+              </div>
+            </q-form>
+          </div>
+        </div>
+      </div>
     </q-footer>
 
     <q-page-container>
