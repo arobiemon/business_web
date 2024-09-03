@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="q-pa-xl bg_gradian">
+    <div class="q-pa-xl bg_gradian col-12 col-md-6">
       <div class="row">
         <div class="col-6">
           <div class="text-h2 text-bold">Predictable Growth Starts here.</div>
@@ -13,7 +13,6 @@
 
           <q-btn
             label="Get Started"
-            @click="onClick"
             class="q-mt-md"
             no-caps
             no-wrap
@@ -32,8 +31,8 @@
         <q-icon name="facebook" size="30px" color="black" />
       </div>
     </div>
-    <div>
-      <div class="centered-text text-h4 row flex-center">
+    <div class="col-12 col-md-6 q-pa-md">
+      <div class="text-h4 row flex-center q-pt-lg text-bold">
         Turn data into better business outcomes.
       </div>
       <div class="row flex-center centered-lorem">
@@ -63,7 +62,6 @@
       <div class="row flex-center">
         <q-btn
           label="Explore the platfrom"
-          @click="onClick"
           no-caps
           no-wrap
           unelevated
@@ -73,16 +71,18 @@
           }"
         />
       </div>
+    </div>
+    <div class="col-12 col-md-6">
       <div class="q-pa-xl row">
         <div class="col-6">
           <q-img
             src="~assets/Mr. Mike.png"
-            :ratio="8/6"
+            :ratio="8 / 6"
             spinner-color="primary"
             spinner-size="82px"
           />
         </div>
-        <div class="col-6 mr_mike">
+        <div class="col-6">
           <div class="text-h2 text-bold">
             Know your buyer, <br />like you know your business.
           </div>
@@ -123,14 +123,8 @@ defineOptions({
   gap: 60px;
 }
 
-.centered-text {
-  font-weight: bold;
-  margin-top: 20px;
-}
-
 .centered-lorem {
   margin-top: 10px;
-  padding: 10px 150px 10px 150px;
 }
 .centered-cols {
   text-align: center;
@@ -143,8 +137,5 @@ defineOptions({
   display: flex;
   justify-content: center;
   margin-top: 20px;
-}
-.mr_mike{
-  margin-top: 4rem;
 }
 </style>
