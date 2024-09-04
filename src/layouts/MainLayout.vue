@@ -11,9 +11,13 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
+        <div class="col-12 col-md-3">
+          <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
+        </div>
 
-        <div>welcome Brother</div>
+        <div class="col-12 col-md-3">Home</div>
+        <div class="col-12 col-md-3">About</div>
+        <div class="col-12 col-md-3">Contact</div>
       </q-toolbar>
     </q-header>
 
