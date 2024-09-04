@@ -72,32 +72,31 @@
         />
       </div>
     </div>
-    <div class="col-12 col-md-6">
-      <div class="q-pa-xl row">
-        <div class="col-6">
-          <q-img
-            src="~assets/Mr. Mike.png"
-            :ratio="8 / 6"
-            spinner-color="primary"
-            spinner-size="82px"
-          />
+    <div class="q-pa-xl row">
+      <div class="col-12 col-md-6">
+        <q-img
+          src="~assets/Mr. Mike.png"
+          :ratio="8 / 6"
+          spinner-color="primary"
+          spinner-size="82px"
+        />
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="text-h2 text-bold">
+          Know your buyer, <br />like you know your business.
         </div>
-        <div class="col-6">
-          <div class="text-h2 text-bold">
-            Know your buyer, <br />like you know your business.
-          </div>
-          <div class="q-mt-md">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-            commodi excepturi enim, facere culpa sint quos eligendi corporis
-            provident nisi accusantium deleniti magni aliquam officiis velit
-            saepe corrupti voluptatum ut.
-          </div>
+        <div class="q-mt-md">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi
+          excepturi enim, facere culpa sint quos eligendi corporis provident
+          nisi accusantium deleniti magni aliquam officiis velit saepe corrupti
+          voluptatum ut.
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+
+    <div>
       <div class="q-pa-xl row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <div class="text-h2 text-bold">
             Know your buyer, <br />like you know your business.
           </div>
@@ -108,7 +107,7 @@
             saepe corrupti voluptatum ut.
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <q-img
             src="~assets/priya.png"
             :ratio="8 / 6"
