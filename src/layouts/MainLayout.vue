@@ -10,14 +10,12 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
-        <div class="col-12 col-md-3">
           <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
-        </div>
-
-        <div class="col-12 col-md-3">Home</div>
-        <div class="col-12 col-md-3">About</div>
-        <div class="col-12 col-md-3">Contact</div>
+          <q-tabs v-model="tab" shrink>
+        <q-tab name="home" label="Home" />
+        <q-tab name="about" label="About" />
+        <q-tab name="contact" label="Contact" />
+      </q-tabs>
       </q-toolbar>
     </q-header>
 
