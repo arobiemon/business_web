@@ -8,14 +8,13 @@
           round
           icon="favorite"
           aria-label="Menu"
-          @click="toggleLeftDrawer"
+          @click="drawerLeft = !drawerLeft"
         />
-          <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
-          <q-tabs v-model="tab" shrink>
-        <q-tab name="home" label="Home" />
-        <q-tab name="about" label="About" />
-        <q-tab name="contact" label="Contact" />
-      </q-tabs>
+        <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
+        <!--for app bar added-->
+        <q-btn label="Home" @click="onClick" to="/" />
+        <q-btn class="q-mx-md" label="About" to="/about" />
+        <q-btn label="Contact Us" @click="onClick" to="/contact" />
       </q-toolbar>
     </q-header>
 
@@ -86,71 +85,37 @@
       </div>
     </q-footer>
 
+    <q-drawer
+      side="right"
+      v-model="drawerLeft"
+      show-if-above
+      bordered
+      :width="200"
+      :breakpoint="500"
+    >
+      <q-scroll-area class="fit">
+        <div class="q-pa-sm">
+          <div v-for="n in 50" :key="n">Drawer {{ n }} / 50</div>
+        </div>
+      </q-scroll-area>
+    </q-drawer>
+
     <q-page-container>
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
-<script setup>
+<script>
 import { ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
 
-defineOptions({
-  name: "MainLayout",
-});
-
-const isOutline = ref(false);
-const linksList = [
-  {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
+export default {
+  setup() {
+    return {
+      drawerLeft: ref(false),
+    };
   },
-  {
-    title: "Github",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
-  },
-  {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
-  },
-  {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
-  },
-  {
-    title: "Twitter",
-    caption: "@quasarframework",
-    icon: "rss_feed",
-    link: "https://twitter.quasar.dev",
-  },
-  {
-    title: "Facebook",
-    caption: "@QuasarFramework",
-    icon: "public",
-    link: "https://facebook.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
-    icon: "favorite",
-    link: "https://awesome.quasar.dev",
-  },
-];
-
-const leftDrawerOpen = ref(false);
-
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value;
-}
+};
 </script>
 <style lang="scss" scoped>
 @media only screen and (max-width: 600px) {
