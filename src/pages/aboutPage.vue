@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-xl">
     <div class="row flex-center">
-      <div class="text-h3 text-bold">Meet our beatiful team</div>
+      <div class="text-h3 text-bold">Meet our beautiful team</div>
       <div class="text_one">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
         laboriosam doloribus error eum perspiciatis rerum, totam neque sequi
@@ -22,44 +22,25 @@
             arrows
             height="400px"
             class="bg-white text-black rounded-borders"
+            autoplay
+            interval="4000"
           >
-            <q-carousel-slide name="boss" class="column no-wrap flex-center">
-              <q-img
-                src="~assets/rocky.png"
-                ratio="16/9"
-                spinner-size="82px"
-                style="height: 300px; width: 300px"
-              />
-              <div class="q-mt-md text-center">
-                <div class="text-bold">{{ Name }}</div>
-                <div>{{ lorem }}</div>
-              </div>
-            </q-carousel-slide>
+            <!-- Loop through the team array and create slides dynamically -->
             <q-carousel-slide
-              name="employee_1"
+              v-for="(member, index) in team"
+              :key="index"
+              :name="member.name"
               class="column no-wrap flex-center"
             >
               <q-img
-                src="~assets/emon.png"
+                :src="member.imgSrc"
                 ratio="16/9"
                 spinner-size="82px"
                 style="height: 300px; width: 300px"
               />
               <div class="q-mt-md text-center">
-                <div class="text-bold">{{ Name_1 }}</div>
-                <div>{{ Employee_1 }}</div>
-              </div>
-            </q-carousel-slide>
-            <q-carousel-slide name="employee_2" class="column no-wrap flex-center">
-              <q-img
-                src="~assets/rahul.png"
-                ratio="16/9"
-                spinner-size="82px"
-                style="height: 300px; width: 300px"
-              />
-              <div class="q-mt-md text-center text-bold">
-                <div>{{ Name_2 }}</div>
-                <div>{{ Employee_2 }}</div>
+                <div class="text-bold">{{ member.name }}</div>
+                <div>{{ member.role }}</div>
               </div>
             </q-carousel-slide>
           </q-carousel>
@@ -74,14 +55,31 @@ import { ref } from "vue";
 
 export default {
   setup() {
+    // Array of team members
+    const team = ref([
+      {
+        name: "Rocky",
+        role: "CEO of the Company",
+        imgSrc:
+          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+      },
+      {
+        name: "Emon",
+        role: "Employee of the Company",
+        imgSrc:
+          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+      },
+      {
+        name: "Rahul",
+        role: "Employee of the Company",
+        imgSrc:
+          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+      },
+    ]);
+
     return {
       slide: ref("boss"),
-      lorem: "CEO of the Company",
-      Name: "Rocky",
-      Name_1: "Emon",
-      Name_2: "Rahul",
-      Employee_1: "Employee of the Company",
-      Employee_2: "Employee of the Company",
+      team,
     };
   },
 };
