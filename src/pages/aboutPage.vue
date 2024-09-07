@@ -8,21 +8,74 @@
         reiciendis officia sed amet blanditiis ipsam possimus, temporibus
         dignissimos quas? Vel, dicta!
       </div>
-
+      <div>
+        <div class="q-gutter-md">
+          <q-carousel
+            v-model="slide"
+            transition-prev="scale"
+            transition-next="scale"
+            swipeable
+            animated
+            control-color="black"
+            navigation
+            padding
+            arrows
+            height="400px"
+            class="bg-white text-black rounded-borders"
+          >
+            <q-carousel-slide name="boss" class="column no-wrap flex-center">
+              <q-img
+                src="~assets/rocky.png"
+                ratio="16/9"
+                spinner-size="82px"
+                style="height: 300px; width: 300px"
+              />
+              <div class="q-mt-md text-center text-bold">
+                <div>{{ Name }}</div>
+                <div>{{ lorem }}</div>
+              </div>
+            </q-carousel-slide>
+            <q-carousel-slide
+              name="employee_1"
+              class="column no-wrap flex-center"
+            >
+              <q-img
+                src="~assets/emon.png"
+                ratio="16/9"
+                spinner-size="82px"
+                style="height: 300px; width: 300px"
+              />
+              <div class="q-mt-md text-center text-bold">
+                <div>{{ Name_1 }}</div>
+                <div>{{ Employee_1 }}</div>
+              </div>
+            </q-carousel-slide>
+          </q-carousel>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  // name: 'PageName',
+  setup() {
+    return {
+      slide: ref("boss"),
+      lorem: "CEO of the Company",
+      Name: "Rocky",
+      Name_1: "Emon",
+      Employee_1: "Employee of the Company",
+    };
+  },
 };
 </script>
 
 <style scoped>
-.text_one{
-  padding: 0 290px;
+.text_one {
+  padding: 0 20%;
   margin: 10px;
 }
-
 </style>
