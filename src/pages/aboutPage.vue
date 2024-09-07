@@ -30,8 +30,8 @@
                 spinner-size="82px"
                 style="height: 300px; width: 300px"
               />
-              <div class="q-mt-md text-center text-bold">
-                <div>{{ Name }}</div>
+              <div class="q-mt-md text-center">
+                <div class="text-bold">{{ Name }}</div>
                 <div>{{ lorem }}</div>
               </div>
             </q-carousel-slide>
@@ -45,8 +45,8 @@
                 spinner-size="82px"
                 style="height: 300px; width: 300px"
               />
-              <div class="q-mt-md text-center text-bold">
-                <div>{{ Name_1 }}</div>
+              <div class="q-mt-md text-center">
+                <div class="text-bold">{{ Name_1 }}</div>
                 <div>{{ Employee_1 }}</div>
               </div>
             </q-carousel-slide>
