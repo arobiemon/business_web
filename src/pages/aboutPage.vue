@@ -50,6 +50,18 @@
                 <div>{{ Employee_1 }}</div>
               </div>
             </q-carousel-slide>
+            <q-carousel-slide name="employee_2" class="column no-wrap flex-center">
+              <q-img
+                src="~assets/rahul.png"
+                ratio="16/9"
+                spinner-size="82px"
+                style="height: 300px; width: 300px"
+              />
+              <div class="q-mt-md text-center text-bold">
+                <div>{{ Name_2 }}</div>
+                <div>{{ Employee_2 }}</div>
+              </div>
+            </q-carousel-slide>
           </q-carousel>
         </div>
       </div>
@@ -67,7 +79,9 @@ export default {
       lorem: "CEO of the Company",
       Name: "Rocky",
       Name_1: "Emon",
+      Name_2: "Rahul",
       Employee_1: "Employee of the Company",
+      Employee_2: "Employee of the Company",
     };
   },
 };
