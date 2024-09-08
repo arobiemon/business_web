@@ -12,9 +12,9 @@
         />
         <q-toolbar-title class="text-bold">Cool Art Lab</q-toolbar-title>
         <!--for app bar added-->
-        <q-btn label="Home" @click="onClick" to="/" />
-        <q-btn class="q-mx-md" label="About" to="/about" />
-        <q-btn label="Contact Us" @click="onClick" to="/contact" />
+        <q-btn label="Home" @click="onClick" flat to="/" />
+        <q-btn class="q-mx-md" label="About" flat to="/about" />
+        <q-btn label="Contact Us" @click="onClick" flat to="/contact" />
       </q-toolbar>
     </q-header>
 
