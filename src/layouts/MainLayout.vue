@@ -93,13 +93,18 @@
       :width="200"
       :breakpoint="500"
     >
-      <q-scroll-area class="fit">
-        <div class="q-pa-sm">
-          <div v-for="n in 50" :key="n">Drawer {{ n }} / 50</div>
-        </div>
-      </q-scroll-area>
+      <q-list>
+        <q-item clickable v-ripple tag="router-link" to="/">
+          <q-item-section>Home</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple tag="router-link" to="/about">
+          <q-item-section>About</q-item-section>
+        </q-item>
+        <q-item clickable v-ripple tag="router-link" to="/contact">
+          <q-item-section>Contact Us</q-item-section>
+        </q-item>
+      </q-list>
     </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
