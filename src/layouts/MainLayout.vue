@@ -6,7 +6,7 @@
           flat
           dense
           round
-          icon="favorite"
+          icon="menu"
           aria-label="Menu"
           @click="drawerLeft = !drawerLeft"
         />
@@ -86,7 +86,7 @@
     </q-footer>
 
     <q-drawer
-      side="right"
+      side="left"
       v-model="drawerLeft"
       show-if-above
       bordered
