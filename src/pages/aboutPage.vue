@@ -61,19 +61,19 @@ export default {
         name: "Rocky",
         role: "CEO of the Company",
         imgSrc:
-          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+          "https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg",
       },
       {
         name: "Emon",
         role: "Employee of the Company",
         imgSrc:
-          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+          "https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg",
       },
       {
         name: "Rahul",
         role: "Employee of the Company",
         imgSrc:
-          "https://passport-photo.online/images/cms/prepare_light_b364e3ec37.webp",
+          "https://static.vecteezy.com/system/resources/previews/024/183/525/non_2x/avatar-of-a-man-portrait-of-a-young-guy-illustration-of-male-character-in-modern-color-style-vector.jpg",
       },
     ]);
 
