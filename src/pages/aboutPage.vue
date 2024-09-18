@@ -23,7 +23,7 @@
             height="400px"
             class="bg-white text-black rounded-borders"
             autoplay
-            interval="4000"
+            interval="4000"    
           >
             <!-- Loop through the team array and create slides dynamically -->
             <q-carousel-slide
