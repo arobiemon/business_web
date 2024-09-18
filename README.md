@@ -33,6 +33,9 @@ npm run format
 
 
 ### Build the app for production
+
+
+##### Added zahid
 ```bash
 quasar build
 ```
