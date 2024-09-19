@@ -23,7 +23,7 @@
             height="400px"
             class="bg-white text-black rounded-borders"
             autoplay
-            interval="4000"    
+            interval="4000"
           >
             <!-- Loop through the team array and create slides dynamically -->
             <q-carousel-slide
@@ -36,7 +36,7 @@
                 :src="member.imgSrc"
                 ratio="16/9"
                 spinner-size="82px"
-                style="height: 300px; width: 300px"
+                style="height: 300px; width: 300px"  
               />
               <div class="q-mt-md text-center">
                 <div class="text-bold">{{ member.name }}</div>
