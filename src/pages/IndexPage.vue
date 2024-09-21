@@ -87,7 +87,7 @@
         </div>
         <div class="q-mt-md">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem commodi
-          excepturi enim, facere culpa sint quos eligendi corporis provident
+          excepturi enim, facere culpa sint quos eligendi corporis provident 
           nisi accusantium deleniti magni aliquam officiis velit saepe corrupti
           voluptatum ut.
         </div>
