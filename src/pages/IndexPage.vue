@@ -63,10 +63,10 @@
         <q-btn
           label="Explore the platfrom"
           no-caps
-          no-wrap
+          no-wrap 
           unelevated
           :style="{
-            background: 'linear-gradient(90deg, #1e3a8a, #3b82f6)',      
+            background: 'linear-gradient(90deg, #1e3a8a, #3b82f6)',
             color: '#fff',
           }"
         />
